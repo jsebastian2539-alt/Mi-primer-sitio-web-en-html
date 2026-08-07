@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(141, 29, 29);
+}
+
+.encabezado_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    left: 10%;
+    margin-right: 60px;
+}
+
+.imagen_logo{
+    width: 150px;
+    height: 90px;
+    border-radius: 25px;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin-left: 60px;
+}
+
+.buscador input{
+    padding: 10px;
+    width: 40%;
+    height: 10%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buscador button{
+    padding: 10px 20px;
+    background-color: #e0a04b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.btn_encabezado ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #e0a04b;
+}
+
+.btn_encabezado a:hover{
+    color: #fa930c;
+    text-decoration: underline;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+}
+
+.slides img.active {
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.8);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
